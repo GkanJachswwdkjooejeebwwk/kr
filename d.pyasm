@@ -1,0 +1,347 @@
+# pydisasm version 6.0.3
+# Python bytecode 2.7 (62211)
+# Disassembled from Python 3.10.3 (main, Mar 17 2022, 04:46:20) [Clang 12.0.8 (https://android.googlesource.com/toolchain/llvm-project c935d99d7
+# Timestamp in code: 4278230416 (2105-07-28 16:20:16)
+# Method Name:       <module>
+# Filename:          sg.py
+# Argument count:    0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000040 (NOFREE)
+# First Line:        1
+# Constants:
+#    0: 0
+#    1: -1
+#    2: None
+#    3: '# silahkan tekan enter untuk'
+#    4: '# Mendownload licenssenya'
+#    5: '=> [Tekan Enter ]'
+#    6: 'termux-open https://sfile.mobi/61nTwIKWNqS'
+#    7: <Code2 code object lo at 0x7f44a3feb0, file sg.py>, line 14
+#    8: <Code2 code object done at 0x7f44a3fd30, file sg.py>, line 26
+# Names:
+#    0: False
+#    1: foo
+#    2: bar
+#    3: random
+#    4: sys
+#    5: os
+#    6: time
+#    7: getpass
+#    8: requests
+#    9: system
+#   10: lo
+#   11: done
+  1:           0 LOAD_NAME            (False)
+               3 STORE_NAME           (foo)
+
+  2:           6 LOAD_NAME            (foo)
+               9 POP_JUMP_IF_FALSE    (to 35)
+
+  3:          12 LOAD_CONST           (0)
+              15 LOAD_CONST           (0)
+              18 BINARY_DIVIDE
+              19 STORE_NAME           (bar)
+
+  4:          22 MAKE_FUNCTION        (21 default parameters)
+              25 MAKE_FUNCTION        (1 default parameters)
+              28 BINARY_DIVIDE
+              29 STORE_NAME           (bar)
+              32 JUMP_FORWARD         (to 35)
+
+  5:     >>   35 LOAD_CONST           (-1)
+              38 LOAD_CONST           (None)
+              41 IMPORT_NAME          (random)
+              44 STORE_NAME           (random)
+              47 LOAD_CONST           (-1)
+              50 LOAD_CONST           (None)
+              53 IMPORT_NAME          (sys)
+              56 STORE_NAME           (sys)
+              59 LOAD_CONST           (-1)
+              62 LOAD_CONST           (None)
+              65 IMPORT_NAME          (os)
+              68 STORE_NAME           (os)
+              71 LOAD_CONST           (-1)
+              74 LOAD_CONST           (None)
+              77 IMPORT_NAME          (time)
+              80 STORE_NAME           (time)
+              83 LOAD_CONST           (-1)
+              86 LOAD_CONST           (None)
+              89 IMPORT_NAME          (getpass)
+              92 STORE_NAME           (getpass)
+
+  6:          95 LOAD_CONST           (-1)
+              98 LOAD_CONST           (None)
+             101 IMPORT_NAME          (requests)
+             104 STORE_NAME           (requests)
+
+  7:         107 LOAD_CONST           ('# silahkan tekan enter untuk')
+             110 PRINT_ITEM
+             111 PRINT_NEWLINE
+
+  8:         112 LOAD_CONST           ('# Mendownload licenssenya')
+             115 PRINT_ITEM
+             116 PRINT_NEWLINE
+
+  9:         117 LOAD_NAME            (getpass)
+             120 LOAD_ATTR            (getpass)
+             123 LOAD_CONST           ('=> [Tekan Enter ]')
+             126 CALL_FUNCTION        (1 positional, 0 named)
+             129 POP_TOP
+
+ 10:         130 LOAD_NAME            (os)
+             133 LOAD_ATTR            (system)
+             136 LOAD_CONST           ('termux-open https://sfile.mobi/61nTwIKWNqS')
+             139 CALL_FUNCTION        (1 positional, 0 named)
+             142 POP_TOP
+
+ 14:         143 LOAD_CONST           (<Code2 code object lo at 0x7f44a3feb0, file sg.py>, line 14)
+             146 MAKE_FUNCTION        (0 default parameters)
+             149 STORE_NAME           (lo)
+
+ 26:         152 LOAD_CONST           (<Code2 code object done at 0x7f44a3fd30, file sg.py>, line 26)
+             155 MAKE_FUNCTION        (0 default parameters)
+             158 STORE_NAME           (done)
+
+ 52:         161 LOAD_NAME            (lo)
+             164 CALL_FUNCTION        (0 positional, 0 named)
+             167 POP_TOP
+             168 LOAD_CONST           (None)
+             171 RETURN_VALUE
+
+
+# Method Name:       lo
+# Filename:          sg.py
+# Argument count:    0
+# Number of locals:  1
+# Stack size:        2
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        14
+# Constants:
+#    0: None
+#    1: 'clear'
+#    2: '[+] Licensse: '
+#    3: 'ghjknbbjgvbvvjnbgjn'
+#    4: 0.5
+#    5: '[!] License salah '
+#    6: '[!] Jika belum mendapatkan licensenya'
+#    7: '[!] silahkan download di sini'
+#    8: '[!] link : https://sfile.mobi/3ZNSr9v0nKh'
+# Names:
+#    0: os
+#    1: system
+#    2: raw_input
+#    3: done
+#    4: time
+#    5: sleep
+#    6: exit
+# Varnames:
+#	li
+# Local variables:
+#    0: li
+ 15:           0 LOAD_GLOBAL          (os)
+               3 LOAD_ATTR            (system)
+               6 LOAD_CONST           ('clear')
+               9 CALL_FUNCTION        (1 positional, 0 named)
+              12 POP_TOP
+
+ 16:          13 LOAD_GLOBAL          (raw_input)
+              16 LOAD_CONST           ('[+] Licensse: ')
+              19 CALL_FUNCTION        (1 positional, 0 named)
+              22 STORE_FAST           (li)
+
+ 17:          25 LOAD_FAST            (li)
+              28 LOAD_CONST           ('ghjknbbjgvbvvjnbgjn')
+              31 COMPARE_OP           (==)
+              34 POP_JUMP_IF_FALSE    (to 47)
+
+ 18:          37 LOAD_GLOBAL          (done)
+              40 CALL_FUNCTION        (0 positional, 0 named)
+              43 POP_TOP
+              44 JUMP_FORWARD         (to 85)
+
+ 20:     >>   47 LOAD_GLOBAL          (time)
+              50 LOAD_ATTR            (sleep)
+              53 LOAD_CONST           (0.5)
+              56 CALL_FUNCTION        (1 positional, 0 named)
+              59 POP_TOP
+
+ 21:          60 LOAD_CONST           ('[!] License salah ')
+              63 PRINT_ITEM
+              64 PRINT_NEWLINE
+
+ 22:          65 LOAD_CONST           ('[!] Jika belum mendapatkan licensenya')
+              68 PRINT_ITEM
+              69 PRINT_NEWLINE
+
+ 23:          70 LOAD_CONST           ('[!] silahkan download di sini')
+              73 PRINT_ITEM
+              74 PRINT_NEWLINE
+
+ 24:          75 LOAD_GLOBAL          (exit)
+              78 LOAD_CONST           ('[!] link : https://sfile.mobi/3ZNSr9v0nKh')
+              81 CALL_FUNCTION        (1 positional, 0 named)
+              84 POP_TOP
+         >>   85 LOAD_CONST           (None)
+              88 RETURN_VALUE
+
+
+# Method Name:       done
+# Filename:          sg.py
+# Argument count:    0
+# Number of locals:  5
+# Stack size:        6
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        26
+# Constants:
+#    0: None
+#    1: 'clear'
+#    2: '   *** [ DUMP ID GRUP ] ***\n     *** [ NO LOGIN] ***\n\nAuthor : Sumarr ID\nGitlab : https://gitlab.com/Sumarr-ID'
+#    3: '=='
+#    4: 20
+#    5: '[+] ID Grup: '
+#    6: '[+] Count  : '
+#    7: '! isi dengan jumlah angka'
+#    8: '[+] Simpan dgn nama: '
+#    9: '[+] wait..'
+#   10: 10
+#   11: ''
+#   12: '** done **'
+#   13: '1000'
+#   14: 11111111111
+#   15: 99999999999
+#   16: 'a'
+# Names:
+#    0: os
+#    1: system
+#    2: raw_input
+#    3: int
+#    4: exit
+#    5: time
+#    6: sleep
+#    7: range
+#    8: str
+#    9: random
+#   10: randint
+#   11: open
+#   12: sys
+#   13: stdout
+#   14: flush
+# Varnames:
+#	au, gh, ck, x, a
+# Local variables:
+#    0: au
+#    1: gh
+#    2: ck
+#    3: x
+#    4: a
+ 27:           0 LOAD_GLOBAL          (os)
+               3 LOAD_ATTR            (system)
+               6 LOAD_CONST           ('clear')
+               9 CALL_FUNCTION        (1 positional, 0 named)
+              12 POP_TOP
+
+ 32:          13 LOAD_CONST           ('   *** [ DUMP ID GRUP ] ***\n     *** [ NO LOGIN] ***\n\nAuthor : Sumarr ID\nGitlab : https://gitlab.com/Sumarr-ID')
+              16 PRINT_ITEM
+              17 PRINT_NEWLINE
+
+ 33:          18 LOAD_CONST           ('==')
+              21 LOAD_CONST           (20)
+              24 BINARY_MULTIPLY
+              25 PRINT_ITEM
+              26 PRINT_NEWLINE
+
+ 34:          27 LOAD_GLOBAL          (raw_input)
+              30 LOAD_CONST           ('[+] ID Grup: ')
+              33 CALL_FUNCTION        (1 positional, 0 named)
+              36 STORE_FAST           (au)
+
+ 35:          39 SETUP_EXCEPT         (to 64)
+
+ 36:          42 LOAD_GLOBAL          (int)
+              45 LOAD_GLOBAL          (raw_input)
+              48 LOAD_CONST           ('[+] Count  : ')
+              51 CALL_FUNCTION        (1 positional, 0 named)
+              54 CALL_FUNCTION        (1 positional, 0 named)
+              57 STORE_FAST           (gh)
+              60 POP_BLOCK
+              61 JUMP_FORWARD         (to 81)
+
+ 37:     >>   64 POP_TOP
+              65 POP_TOP
+              66 POP_TOP
+
+ 38:          67 LOAD_GLOBAL          (exit)
+              70 LOAD_CONST           ('! isi dengan jumlah angka')
+              73 CALL_FUNCTION        (1 positional, 0 named)
+              76 POP_TOP
+              77 JUMP_FORWARD         (to 81)
+              80 END_FINALLY
+
+ 39:     >>   81 LOAD_GLOBAL          (raw_input)
+              84 LOAD_CONST           ('[+] Simpan dgn nama: ')
+              87 CALL_FUNCTION        (1 positional, 0 named)
+              90 STORE_FAST           (ck)
+
+ 40:          93 LOAD_CONST           ('[+] wait..')
+              96 PRINT_ITEM
+              97 PRINT_NEWLINE
+
+ 41:          98 LOAD_GLOBAL          (time)
+             101 LOAD_ATTR            (sleep)
+             104 LOAD_CONST           (10)
+             107 CALL_FUNCTION        (1 positional, 0 named)
+             110 POP_TOP
+
+ 42:         111 LOAD_CONST           ('')
+             114 PRINT_ITEM
+             115 PRINT_NEWLINE
+
+ 43:         116 LOAD_CONST           ('')
+             119 PRINT_ITEM
+             120 PRINT_NEWLINE
+
+ 44:         121 LOAD_CONST           ('** done **')
+             124 PRINT_ITEM
+             125 PRINT_NEWLINE
+
+ 45:         126 SETUP_LOOP           (to 213)
+             129 LOAD_GLOBAL          (range)
+             132 LOAD_FAST            (gh)
+             135 CALL_FUNCTION        (1 positional, 0 named)
+             138 GET_ITER
+         >>  139 FOR_ITER             (to 212)
+             142 STORE_FAST           (x)
+
+ 46:         145 LOAD_CONST           ('1000')
+             148 LOAD_GLOBAL          (str)
+             151 LOAD_GLOBAL          (random)
+             154 LOAD_ATTR            (randint)
+             157 LOAD_CONST           (11111111111)
+             160 LOAD_CONST           (99999999999)
+             163 CALL_FUNCTION        (2 positional, 0 named)
+             166 CALL_FUNCTION        (1 positional, 0 named)
+             169 BINARY_ADD
+             170 STORE_FAST           (a)
+
+ 47:         173 LOAD_GLOBAL          (open)
+             176 LOAD_FAST            (ck)
+             179 LOAD_CONST           ('a')
+             182 CALL_FUNCTION        (2 positional, 0 named)
+             185 LOAD_GLOBAL          (sys)
+             188 STORE_ATTR           (stdout)
+
+ 48:         191 LOAD_FAST            (a)
+             194 PRINT_ITEM
+             195 PRINT_NEWLINE
+
+ 49:         196 LOAD_GLOBAL          (sys)
+             199 LOAD_ATTR            (stdout)
+             202 LOAD_ATTR            (flush)
+             205 CALL_FUNCTION        (0 positional, 0 named)
+             208 POP_TOP
+             209 JUMP_ABSOLUTE        (to 139)
+         >>  212 POP_BLOCK
+         >>  213 LOAD_CONST           (None)
+             216 RETURN_VALUE
+
